@@ -13,9 +13,15 @@ switch(choice)
         break;
     case 2:
         LogicalPrograms.PerfectNumberUc2 perfectNumber =  new LogicalPrograms.PerfectNumberUc2();
-        Console.WriteLine("Enter a number whther its Perfect number or not");
+        Console.WriteLine("Enter a number to check whther its Perfect number or not");
         number = Convert.ToInt32(Console.ReadLine());
         perfectNumber.CheckPerfectNumber(number);
+        break;
+    case 3:
+        LogicalPrograms.PrimeNumberUc3 primeNumber= new LogicalPrograms.PrimeNumberUc3();
+        Console.WriteLine("Enter a number to check whther its Prime number or not");
+        number = Convert.ToInt32(Console.ReadLine());
+        primeNumber.CheckPrime(number);
         break;
     default:
         break;
