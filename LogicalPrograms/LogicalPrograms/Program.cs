@@ -23,6 +23,12 @@ switch(choice)
         number = Convert.ToInt32(Console.ReadLine());
         primeNumber.CheckPrime(number);
         break;
+    case 4:
+        LogicalPrograms.ReverseNumberUc4 reverse = new LogicalPrograms.ReverseNumberUc4();
+        Console.WriteLine("Enter a number to reverse it");
+        number = Convert.ToInt32(Console.ReadLine());
+        reverse.Reverse(number);
+        break;
     default:
         break;
 }
