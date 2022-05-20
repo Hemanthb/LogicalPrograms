@@ -29,6 +29,12 @@ switch(choice)
         number = Convert.ToInt32(Console.ReadLine());
         reverse.Reverse(number);
         break;
+    case 5:
+        LogicalPrograms.CouponNumberUc5 couponNumber = new LogicalPrograms.CouponNumberUc5();
+        Console.WriteLine("Enter no of coupons code required to be generated");
+        number = Convert.ToInt32(Console.ReadLine());
+        couponNumber.GenerateCoupon(number);
+        break;
     case 6:
         LogicalPrograms.StopWatchUc6 stopWatch = new LogicalPrograms.StopWatchUc6();
         stopWatch.CalculateTime();
