@@ -29,6 +29,10 @@ switch(choice)
         number = Convert.ToInt32(Console.ReadLine());
         reverse.Reverse(number);
         break;
+    case 6:
+        LogicalPrograms.StopWatchUc6 stopWatch = new LogicalPrograms.StopWatchUc6();
+        stopWatch.CalculateTime();
+        break;
     default:
         break;
 }
