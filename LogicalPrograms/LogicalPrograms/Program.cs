@@ -33,6 +33,14 @@ switch(choice)
         LogicalPrograms.StopWatchUc6 stopWatch = new LogicalPrograms.StopWatchUc6();
         stopWatch.CalculateTime();
         break;
+    case 9:
+        LogicalPrograms.TempConversionUc9 temp = new LogicalPrograms.TempConversionUc9();
+        Console.WriteLine("Enter the temperature to convert");
+        Double temperature = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("Enter C for celsius and F for fahrenheit");
+        Char degree =Convert.ToChar(Console.ReadLine());
+        temp.ConvertTemperatureUnit(temperature, degree);
+        break;
     default:
         break;
 }
