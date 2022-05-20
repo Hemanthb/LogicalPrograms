@@ -47,6 +47,13 @@ switch(choice)
         Char degree =Convert.ToChar(Console.ReadLine());
         temp.ConvertTemperatureUnit(temperature, degree);
         break;
+    case 10:
+        Console.WriteLine("Enter the Principal,years,rate to calculate monthly payment");
+        int principal = Convert.ToInt32(Console.ReadLine());
+        int years = Convert.ToInt32(Console.ReadLine());
+        int rate = Convert.ToInt32(Console.ReadLine());
+        LogicalPrograms.MonthlyPaymentUc10.CalculateMonthlyPayment(principal,years,rate);
+        break;
     default:
         break;
 }
