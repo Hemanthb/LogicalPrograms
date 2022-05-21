@@ -39,6 +39,12 @@ switch(choice)
         LogicalPrograms.StopWatchUc6 stopWatch = new LogicalPrograms.StopWatchUc6();
         stopWatch.CalculateTime();
         break;
+    case 7:
+        LogicalPrograms.ChangeVendingMachineUc7 change = new LogicalPrograms.ChangeVendingMachineUc7();
+        Console.WriteLine("Enter the required change amount to be Provided");
+        String amount = Console.ReadLine();
+        change.CalculateChange(amount);
+        break;
     case 9:
         LogicalPrograms.TempConversionUc9 temp = new LogicalPrograms.TempConversionUc9();
         Console.WriteLine("Enter the temperature to convert");
