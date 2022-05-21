@@ -67,6 +67,12 @@ switch(choice)
         int rate = Convert.ToInt32(Console.ReadLine());
         LogicalPrograms.MonthlyPaymentUc10.CalculateMonthlyPayment(principal,years,rate);
         break;
+    case 13:
+        Console.WriteLine("Enter a decimal number to convert to binary and swap nibbles");
+        int no = Convert.ToInt32(Console.ReadLine());
+        LogicalPrograms.SwapNibblesUc13 swapNibbles = new LogicalPrograms.SwapNibblesUc13();
+        swapNibbles.SwapNibbles(no);
+        break;
     default:
         break;
 }
