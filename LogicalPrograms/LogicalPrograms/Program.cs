@@ -45,6 +45,13 @@ switch(choice)
         String amount = Console.ReadLine();
         change.CalculateChange(amount);
         break;
+    case 8:
+        string[] elements = new string[3];
+        Console.WriteLine("Enter a date to find which day[Format (M)2-(d)22-(Y)1989] of week it is - ");
+        elements = Console.ReadLine().Split("-");
+
+        LogicalPrograms.DayOfWeekUc8.FindDayOfWeek(Convert.ToInt32(elements[0]), Convert.ToInt32(elements[1]), Convert.ToInt32(elements[2]));
+        break;
     case 9:
         LogicalPrograms.TempConversionUc9 temp = new LogicalPrograms.TempConversionUc9();
         Console.WriteLine("Enter the temperature to convert");
