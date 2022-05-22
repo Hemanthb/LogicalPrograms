@@ -67,6 +67,11 @@ switch(choice)
         int rate = Convert.ToInt32(Console.ReadLine());
         LogicalPrograms.MonthlyPaymentUc10.CalculateMonthlyPayment(principal,years,rate);
         break;
+    case 11:
+        Console.WriteLine("Enter the number to find its square root");
+        int SqNumber = Convert.ToInt32(Console.ReadLine());
+        LogicalPrograms.NewtonSquareRoot.FindSquareRoot(SqNumber);
+        break;
     case 13:
         Console.WriteLine("Enter a decimal number to convert to binary and swap nibbles");
         int no = Convert.ToInt32(Console.ReadLine());
