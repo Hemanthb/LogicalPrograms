@@ -17,7 +17,11 @@ namespace LogicalPrograms
                 binary += Convert.ToString(rem);
                 number = number / 2;
             }
-            Console.WriteLine("Decimal Number converted to binary is -"+binary);
+            char[] binaryDigit = binary.ToCharArray();
+            Array.Reverse(binaryDigit);
+            String binary_digits = new string(binaryDigit);
+            binary_digits = binary_digits.PadLeft(8, '0');
+            Console.WriteLine("Decimal Number converted to binary is - "+binary_digits);
         }
     }
 }

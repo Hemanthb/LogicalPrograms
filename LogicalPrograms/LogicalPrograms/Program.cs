@@ -72,6 +72,11 @@ switch(choice)
         int SqNumber = Convert.ToInt32(Console.ReadLine());
         LogicalPrograms.NewtonSquareRoot.FindSquareRoot(SqNumber);
         break;
+    case 12:
+        Console.WriteLine("Enter a decimal number to convert it to binary number");
+        Decimal DeciNumber = Convert.ToInt32(Console.ReadLine());
+        LogicalPrograms.DecimalToBinary.ConvertDecimaltoBinary(DeciNumber);
+        break;
     case 13:
         Console.WriteLine("Enter a decimal number to convert to binary and swap nibbles");
         int no = Convert.ToInt32(Console.ReadLine());
